@@ -1,0 +1,224 @@
+.dashboardpage{
+    margin-top: 80px;
+  padding: 20px;
+}
+.dashboardpage .searchbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-left: 10%;
+    width: 80%;
+    border-radius: 30px;
+    background-color: rgb(241, 236, 236);
+   
+}
+.dashboardpage .searchbar input{
+    width: 90%;
+    background: none;
+    border: none;
+    font-size: 18px;
+   
+}
+input:focus{
+    outline: none;
+}
+.grid{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    margin-left: 7%;
+    gap: 20px;
+    }
+
+.first{
+    display: flex;
+    gap:10px;
+}
+.coinCard{
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: rgb(241, 236, 236);
+    width: 280px;
+    color: black;
+    
+}
+.grid a{
+    text-decoration: none;
+}
+.list a{
+    text-decoration: none;
+}
+.coinCard p{
+    color: gray;
+    font-size: 15px;
+}
+.coinList p{
+    color: gray;
+    font-size: 15px;
+}
+.coinList span{
+    font-size: 20px;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    margin-left: 30px;
+     gap: 20px;
+}
+.coinList{
+    display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 20px;
+  color: black;
+ 
+}
+.coinList:hover{
+    background-color: rgb(241, 236, 236);
+}
+.make{
+    display: flex;
+     align-items: center;
+}
+.precent .green{
+    width: 60px;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 20px;
+ 
+}
+.precent .red{
+    width: 60px;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 20px;
+ 
+}
+.green {
+    border: 2px solid green;
+    color: green;
+  }
+    .red {
+    border: 2px solid red;
+    color: red;
+  }
+    .green:hover {
+    background-color: green;
+    color: black;
+  }
+    .red:hover {
+        background-color: red;
+        color: black;
+  }
+ .arrowgreen{
+    border: 2px solid green;
+    color: green;
+    width: 25px;
+    height: 25px;
+    padding: 8px;
+    border-radius: 50%;
+ } 
+ .arrowgreen:hover{
+    background-color: green;
+    color: black;
+    
+ } 
+ .arrowred{
+    border: 2px solid red;
+    color: red;
+    width: 25px;
+    padding: 8px;
+    height: 25px;
+    border-radius: 50%;
+ }
+ .arrowred:hover{
+    background-color: red;
+    color: black;
+    
+ } 
+ .pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.coindetalspage{
+    margin-top: 80px;
+    padding: 20px;
+   
+}
+.another{
+    background-color: rgb(241, 236, 236);
+   
+}
+.coininfo{
+    padding: 15px;
+    border-radius: 20px;
+    color: black;
+    background-color: rgb(241, 236, 236);
+    margin :25px;
+   
+}
+.coininfo p{
+    color: rgb(87, 86, 86);
+    margin-top: 20px;
+    }
+.chart{
+   padding: 20px;
+    border-radius: 20px;
+    color: black;
+    background-color: rgb(241, 236, 236);
+   
+}
+.listcontainer{
+    margin: 10px;
+}
+.loader{
+ margin-top: 50%;
+ color: rgb(49, 49, 179);
+}
+@media screen and (max-width: 767px) {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr); 
+    }
+    .coinList p{
+        font-size: 10px;
+    }
+    .coinList span {
+    font-size: 12px; 
+    }
+    .coinList h4{
+    font-size: 10px;
+    }
+    .coinList h3{
+    font-size: 10px;
+    }
+  }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); 
+    }
+    .coinList p{
+        font-size: 15px;
+    }
+   .coinList span {
+    font-size: 15px; 
+    }
+    .coinList h4{
+    font-size: 15px;
+    }
+    .coinList h3{
+    font-size: 15px;
+    }
+  }
+    @media screen and (min-width: 1024px) {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+    }
+  }
+ 

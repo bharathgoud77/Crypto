@@ -1,0 +1,254 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --grey:rgb(110, 109, 109);
+  --black: rgb(63, 62, 62); 
+  --white:#fffdfd;
+  --background-light: #fffdfd;
+  --background-dark: #111;
+  --text-color-light: #0f0c0c;
+  --text-color-dark: #fdf8f8;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&display=swap');
+  
+body{
+  font-family: 'Inter', sans-serif;
+    }
+
+  /* navbar */
+.navbar{
+  width: 100%; 
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-light);
+  color: var(--text-color-light); 
+}
+.links {
+  margin-top: 20px;
+   display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.links a{
+ color: var(--grey);
+ text-decoration: none;
+ 
+}
+.icon h1{
+  margin-left: 30px;
+  color: var(--black);
+}
+.icon h1::after {
+  content: '.';
+  color: blue;
+}
+
+.toggleouter {
+   width: 40px;
+  height: 15px;  
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: #797575;
+   border-radius: 20px;
+  
+}
+
+.toggleinner {
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 3px 3px 6px 0px rgb(146, 143, 143);
+  transition: transform 0.3s ease;
+}
+.links a.dashboadbtn{
+  background-color: #3a80e9;
+  padding: 10px;
+padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 20px;
+  color: white;
+  margin-right: 30px;
+  margin-top: -5px;
+}
+.links a.dashboadbtn:hover{
+  box-shadow: 3px 3px 5px 3px rgb(134, 134, 226);
+}
+.hambtn{
+  display: none;
+ margin-right: 40px;
+ 
+}
+.hambtn button{
+  border: none;
+  cursor: pointer;
+}
+
+.inside a{
+  margin-right:10;
+  color: var(--grey);
+ text-decoration: none;
+ margin-left: 10px;
+}
+.toggleinner.move{
+  background-color: #3a80e9;
+  transform: translateX(20px);
+}
+
+.custom-paper {
+  width: 150px; 
+  height: 100%;
+  background-color: var(--background-light);
+ padding-top: 30px;
+ display: flex;
+ flex-direction: column;
+ gap: 8px;
+ padding-left: 20px;
+}
+
+
+
+/* them */
+.dark-theme .navbar{
+  background-color: var(--background-dark); 
+  color: var( --text-color-dark);
+    } 
+.dark-theme h1{
+   color: var( --text-color-dark);
+  }
+.dark-theme .links a{ 
+  color: var( --text-color-dark);
+}
+.dark-theme .inside a{
+    color: var(--text-color-dark);
+ }
+
+ .dark-theme .custom-paper {
+  width: 150px; 
+  height: 100%;
+  background-color: var(--background-dark);
+}
+.dark-theme .main .titleone{
+ color: var(--text-color-dark);
+}
+.dark-theme .main{
+  background-color: var(--background-dark);
+}
+.dark-theme .main .left{
+  background-color: var(--background-dark);
+}
+.dark-theme .main .para{
+  color: var(--grey);
+ }
+
+ .dark-theme .footer .sharebtn{
+  color: var(--text-color-dark);
+ }
+ .dark-theme .compare{
+  background-color: var(--background-dark);
+  color: var(--text-color-dark);
+ }
+.dark-theme .dashboardpage{
+  background-color: var(--background-dark);
+  color: var(--text-color-dark);
+}
+.dark-theme .dashboardpage{
+  background-color: var(--background-dark);
+  color: var(--text-color-dark);
+}
+.dark-theme .dashboardpage .searchbar{
+  background-color: var(--black);
+  color: var(--text-color-dark);
+}
+.dark-theme .dashboardpage .coinCard{
+  background-color: var(--black);
+  color: var(--text-color-dark);
+}
+.dark-theme .dashboardpage .searchbar input{
+  color: var(--text-color-dark);
+}
+.dark-theme .dashboardpage .label{
+  color: var(--text-color-dark);
+}
+.dark-theme .dashboardpage .coinList{
+  background-color: var(--black);
+  color: var(--text-color-dark);
+}
+.dark-theme .dashboardpage .pagination{
+  background: none;
+}
+.dark-theme .dashboardpage .custom-pagination {
+  background:none;
+   -webkit-text-fill-color: var(--white);
+}
+
+/*  */
+.dark-theme .coindetalspage{
+  background-color:var(--background-dark);
+}
+.dark-theme .coindetalspage .coinList{
+  background-color: var(--black);
+  color: var(--text-color-dark);
+}
+.dark-theme .coindetalspage .chart{
+  background-color: var(--black);
+  color: var(--text-color-dark);
+}
+
+.dark-theme .compare .coinList{
+  background-color: var(--black);
+  color: var(--text-color-dark);
+}
+.dark-theme .coindetalspage .coininfo{
+  background-color: var(--black);
+  color: var(--text-color-dark);
+}
+.dark-theme .compare .chart{
+  background-color: var(--black);
+  color: var(--text-color-dark);
+}
+.dark-theme .coindetalspage .coininfo p{
+  background-color: var(--black);
+  color: var(--text-color-dark);
+}
+.dark-theme .compare .coininfo{
+  background-color: var(--black);
+  color: var(--text-color-dark);
+}
+.dark-theme .compare .coininfo p{
+  background-color: var(--black);
+  color: var(--text-color-dark);
+}
+.dark-theme .compare{
+  background-color:var(--background-dark);
+}
+.dark-theme .compare .selectCoin{
+  -webkit-text-fill-color: #fff;
+ 
+}
+.dark-theme .dayselector{
+  -webkit-text-fill-color: #fff;
+}
+.dayselector {
+  margin-top: 20px;
+}
+
+
+
+.ToggleButtons {
+  border-color: #3a80e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}

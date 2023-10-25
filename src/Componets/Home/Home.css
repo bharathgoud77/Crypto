@@ -1,0 +1,132 @@
+.main{
+    margin-top: 80px;
+    display: flex;
+    height: 100%;
+    padding: 20px;
+  }
+  .main .titletwo{
+    color:  #3a80e9;
+     font-size: 7rem;
+     font-weight: 900;
+  }
+  .main .titleone{
+    font-size: 7rem;
+  font-weight: 900;
+  }
+  .left{
+    margin-top: 2.5rem;
+    width: 50%;
+    margin-left: 40px;
+    
+  
+  }
+  .right{
+    width: 50%;
+    position: relative;
+    margin-top: 2rem;
+   margin-right: 60px;
+   height: 29rem;
+  }
+  .gre{
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    width: 40%;
+    height: 28rem;
+   
+  }
+  .phone{
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    width: 50%;
+    height: 32rem;
+    
+  }
+ 
+  
+  .footer .dashboardbtn{
+    background-color: #3a80e9;
+    padding: 10px;
+    font-size: 20px;
+  padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 20px;
+    color: white;
+     margin: 20px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .footer .sharebtn:hover{
+    background-color:#3a80e9;
+  
+    }
+    .main p{
+      margin-bottom: 40px;
+    }
+  .footer .sharebtn{
+    cursor: pointer;
+    background: transparent;
+    padding: 9px;
+    font-size: 20px;
+  padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 20px;
+     border:1px solid #3a80e9;
+    margin: 20px;
+    text-decoration: none;
+    color: #111;
+  }
+@media screen and (max-width: 767px) {
+  .links {
+    display: none;
+  }
+  .hambtn{
+    display: block;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+           }
+  .left {
+    text-align: center;
+    margin: -10;
+  }
+  .main h1 {
+    font-size: 16px;
+    margin: -10px;
+  }
+  .para {
+    font-size: 10px;
+    margin: -7px;
+  }
+  .phone {
+    width: 100%;
+  }
+  .gre {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .left {
+    flex: 1;
+    text-align: left;
+  }
+  .right {
+    flex: 1;
+       text-align: center;
+  }
+  .phone {
+    width: auto;
+   
+  }
+  .gre {
+    display: block;
+  }
+}
